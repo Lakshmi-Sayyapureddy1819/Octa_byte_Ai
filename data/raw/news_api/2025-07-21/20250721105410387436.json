@@ -1,0 +1,13 @@
+{
+    "source": {
+        "id": null,
+        "name": "Slashdot.org"
+    },
+    "author": "BeauHD",
+    "title": "CarFax For Used PCs: Hewlett Packard Wants To Give Laptops New Life",
+    "description": "HP is developing a \"PCFax\" system similar to CarFax for used cars that securely collects and stores detailed device usage and health data at the firmware level to extend the life of PCs and reduce e-waste. A team of HP experts outlines the system in a recent …",
+    "url": "https://slashdot.org/story/25/06/30/2052250/carfax-for-used-pcs-hewlett-packard-wants-to-give-laptops-new-life",
+    "urlToImage": "https://a.fsdn.com/sd/topics/hp_64.png",
+    "publishedAt": "2025-06-30T22:40:00Z",
+    "content": "The secure telemetry protocol we've developed at HP works as follows. We gather the critical hardware and sensor data and store it in a designated area of the SSD. This area is write-locked, meaning … [+2200 chars]"
+}

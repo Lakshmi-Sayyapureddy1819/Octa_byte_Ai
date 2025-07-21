@@ -1,0 +1,13 @@
+{
+    "source": {
+        "id": null,
+        "name": "Internet"
+    },
+    "author": "info@thehackernews.com (The Hacker News)",
+    "title": "Critical Open VSX Registry Flaw Exposes Millions of Developers to Supply Chain Attacks",
+    "description": "Cybersecurity researchers have disclosed a critical vulnerability in the Open VSX Registry (\"open-vsx[.]org\") that, if successfully exploited, could have enabled attackers to take control of the entire Visual Studio Code extensions marketplace, posing a sever…",
+    "url": "https://thehackernews.com/2025/06/critical-open-vsx-registry-flaw-exposes.html",
+    "urlToImage": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEEHqPrHq7VmKAMERwPU9ds2PToOWXTPMLkzIZ3Or4-l3pIxtUnHLaajhJccDlqLZ91_9S7Np90S2W7dJibBBGcTUqmBeVo5WJoJlHcfB_W9oPMoqedq0gi3iPdKGWNSPb3TAlrBqk0KSLXUzI6aCTiNUlLyheRA7TG_nUUjXuTrEJse0LIiuPMRfF9xsV/s728-rw-e365/openvsx.png",
+    "publishedAt": "2025-06-26T16:46:00Z",
+    "content": "Cybersecurity researchers have disclosed a critical vulnerability in the Open VSX Registry (\"open-vsx[.]org\") that, if successfully exploited, could have enabled attackers to take control of the enti… [+3127 chars]"
+}

@@ -1,0 +1,13 @@
+{
+    "source": {
+        "id": null,
+        "name": "Patchstack.com"
+    },
+    "author": "Rafie Muhammad",
+    "title": "Malware Found in Official GravityForms Plugin Indicating Supply Chain Breach",
+    "description": "Update 8-11-2025 06:00 UTC: We have observed some activity in regard to one of the backdoors that involves a gf_api_token parameter. The IP address 193.160.101.6 tries to request, for every site, the following URLs with a spoofed user agent: Update 7-11-2025 …",
+    "url": "https://patchstack.com/articles/critical-malware-found-in-gravityforms-official-plugin-site/",
+    "urlToImage": "https://patchstack.com/wp-content/uploads/2025/07/critical.png",
+    "publishedAt": "2025-07-12T06:41:59Z",
+    "content": "Update 8-11-2025 06:00 UTC: We have observed some activity in regard to one of the backdoors that involves a gf_api_token parameter. The IP address 193.160.101.6 tries to request, for every site, the… [+26621 chars]"
+}

@@ -1,0 +1,13 @@
+{
+    "source": {
+        "id": null,
+        "name": "Android Central"
+    },
+    "author": "techkritiko@gmail.com (Jay Bonggolto) , Jay Bonggolto",
+    "title": "Google is doubling down on cybersecurity using AI",
+    "description": "Whether it’s uncovering stealthy security flaws or boosting how threats are spotted, Google’s AI tools aim to rewrite the rules of digital defense.",
+    "url": "https://www.androidcentral.com/apps-software/google-is-doubling-down-on-cybersecurity-using-ai",
+    "urlToImage": "https://cdn.mos.cms.futurecdn.net/TR6Lpt7hsmiMHvAw49yqoE.jpg",
+    "publishedAt": "2025-07-15T10:00:00Z",
+    "content": "What you need to know\r\n<ul><li>Big Sleep, Google's AI security agent, just sniffed out a hidden SQLite flaw (CVE-2025-6965) that hackers were already exploiting.</li><li>Google’s open-source forensic… [+2956 chars]"
+}

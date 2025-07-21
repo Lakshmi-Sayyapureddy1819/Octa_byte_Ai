@@ -1,0 +1,7 @@
+{
+    "url": "https://forgecode.dev/blog/prevent-attacks-on-mcp",
+    "title": "MCP Security Vulnerabilities and Attack Vectors",
+    "source": "Forgecode.dev",
+    "published_at": "2025-07-19T18:14:19Z",
+    "content": "Been digging into Model Context Protocol implementations lately and found some stuff that's keeping me up at night. Not because it's earth-shattering, but because it's the kind of boring security deb… [+5903 chars]"
+}

@@ -1,0 +1,13 @@
+{
+    "source": {
+        "id": null,
+        "name": "Search Engine Journal"
+    },
+    "author": "Roger Montti",
+    "title": "Malware Discovered In Gravity Forms WordPress Plugin via @sejournal, @martinibuster",
+    "description": "A remote code execution vulnerability through a supply chain attack was discovered in Gravity Forms that enables remote code execution\nThe post Malware Discovered In Gravity Forms WordPress Plugin appeared first on Search Engine Journal.",
+    "url": "https://www.searchenginejournal.com/malware-discovered-in-gravity-forms-wordpress-plugin/550997/",
+    "urlToImage": "https://www.searchenginejournal.com/wp-content/uploads/2025/07/gravity-forms-vulnerability-482.jpg",
+    "publishedAt": "2025-07-14T09:40:34Z",
+    "content": "WordPress security company Patchstack published an advisory about a serious vulnerability in Gravity Forms caused by a supply chain attack. Gravity Forms responded immediately and released an update … [+2237 chars]"
+}

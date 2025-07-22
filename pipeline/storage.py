@@ -1,9 +1,12 @@
 import json
 import os
+import gzip
 from datetime import datetime
 from utils.helpers import get_logger
+import boto3
 
 class LocalStorage:
+    """Saves data to the local filesystem."""
     def __init__(self, base_path):
         self.base_path = base_path
         self.logger = get_logger(self.__class__.__name__)
@@ -25,11 +28,42 @@ class LocalStorage:
         except IOError as e:
             self.logger.error(f"Error saving data to {file_path}: {e}")
 
-def get_storage_client(config):
-    if config['provider'] == 'local':
-        return LocalStorage(config['local']['base_path'])
-    # Add 'aws' provider logic here if you switch to S3
-    # elif config['provider'] == 'aws':
-    #     return S3Storage(...)
-    else:
-        raise ValueError("Unsupported storage provider")
+class S3Storage:
+    """Saves data to AWS S3."""
+    def __init__(self, bucket_name):
+        self.bucket_name = bucket_name
+        self.s3_client = boto3.client('s3')
+        self.logger = get_logger(self.__class__.__name__)
+
+    def save(self, data, source, data_type='raw'):
+        date_str = datetime.now().strftime('%Y-%m-%d')
+        timestamp = datetime.now().strftime('%Y%m%d%H%M%S%f')
+        s3_key = f"{data_type}/{source}/{date_str}/{timestamp}.json.gz"
+
+        try:
+            json_bytes = json.dumps(data, ensure_ascii=False).encode('utf-8')
+            compressed_data = gzip.compress(json_bytes)
+            
+            self.s3_client.put_object(
+                Bucket=self.bucket_name,
+                Key=s3_key,
+                Body=compressed_data,
+                ContentEncoding='gzip',
+                ContentType='application/json'
+            )
+            self.logger.info(f"Successfully saved data to s3://{self.bucket_name}/{s3_key}")
+        except Exception as e:
+            self.logger.error(f"Error saving data to S3: {e}")
+
+def get_storage_clients(config):
+    """Initializes all active storage clients based on the config."""
+    clients = []
+    active_providers = config.get("active", [])
+    
+    if "local" in active_providers:
+        clients.append(LocalStorage(config["providers"]["local"]["base_path"]))
+    
+    if "aws" in active_providers:
+        clients.append(S3Storage(config["providers"]["aws"]["bucket_name"]))
+        
+    return clients

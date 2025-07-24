@@ -8,20 +8,19 @@ WEBSITES = {
     "markets_and_markets": "https://www.marketsandmarkets.com/Market-Reports/supply-chain-management-market-190997554.html"
 }
 
-# News API configuration
-NEWS_API_KEY = "091b719164eb4bbbbbbdc05c4b07477c"  # Replace with your actual NewsAPI key
+
+NEWS_API_KEY = "Oxxxxxxxxxxxxxxxxxxxxxx"  # Replace with your actual NewsAPI key
 NEWS_API_QUERY = "logistics OR supply chain"
 
-# Storage configuration to enable multiple providers
-# Add or remove providers from the 'active' list as needed.
+
 STORAGE_CONFIG = {
-    "active": ["local", "aws"], # Use both local and aws
+    "active": ["local", "aws"],
     "providers": {
         "local": {
             "base_path": "data"
         },
         "aws": {
-            "bucket_name": "your-logistics-data-bucket" # <-- Change to your S3 bucket name
+            "bucket_name": "your-logistics-data-bucket" 
         }
     }
 }

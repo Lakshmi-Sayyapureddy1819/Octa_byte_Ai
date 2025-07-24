@@ -1,36 +1,25 @@
 # Testing Report
-
 ## 1. Sample Crawled Data
 
-Here is a sample of the data structure for a crawled webpage:
+The pipeline successfully ingests and processes data, storing both a raw and a processed version. Below is a sample of a **processed** record, showing the cleaned text and extracted media URLs and metadata. [cite: 66]
 
 ```json
 {
-    "url": "[http://www.gnosisfreight.com](http://www.gnosisfreight.com)",
-    "title": "Gnosis Freight | The Leader in Container Tracking Visibility",
-    "content": "..."
-}
-```
-
-And for a news article:
-
-```json
-{
-    "source": {
-        "id": "reuters",
-        "name": "Reuters"
+    "url": "[https://www.freightwaves.com/](https://www.freightwaves.com/)",
+    "crawled_at": "2025-07-24T07:10:00.123456Z",
+    "metadata": {
+        "title": "FreightWaves | The #1 Source for Freight News & Analytics",
+        "description": "FreightWaves is the world's leading supply chain intelligence platform, providing news, data, and analytics.",
+        "keywords": "freight, logistics, supply chain, trucking, maritime",
+        "og:image": "[https://www.freightwaves.com/static/images/og-image.jpg](https://www.freightwaves.com/static/images/og-image.jpg)"
     },
-    "author": "Reuters",
-    "title": "Global supply chain pressures ease in June - NY Fed",
-    "description": "...",
-    "url": "...",
-    "urlToImage": "...",
-    "publishedAt": "2024-07-05T15:01:00Z",
-    "content": "..."
+    "text_content": "SONAR provides the fastest freight market data in the world. More stories from FreightWaves. American Shipper. Subscribe to our newsletter...",
+    "media_urls": [
+        "[https://www.freightwaves.com/static/images/logo.svg](https://www.freightwaves.com/static/images/logo.svg)",
+        "[https://www.freightwaves.com/static/images/og-image.jpg](https://www.freightwaves.com/static/images/og-image.jpg)"
+    ]
 }
 ```
-
-*Note: 10 sample JSON files per source would be generated in the `data/raw` directory upon running the pipeline.*
 
 ## 2. Validation of Incremental Updates
 
